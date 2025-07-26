@@ -1,0 +1,64 @@
+{
+  "author": "闫瑞锋 <xlyanrui@sina.com> (https://github.com/yrjwcharm)",
+  "bugs": {
+    "url": "https://github.com/yrjwcharm/react-native-ohos-docviewer/issues"
+  },
+  "dependencies": {},
+  "description": "这是一款基于React Native HarmonyOS端文件文档查看器(pdf、png、jpg、xml、xls、doc、ppt、xlsx、docx、pptx 等）开源插件",
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.5"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js",
+      "source": "./src/index.tsx",
+      "types": "./src/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "harmony",
+    "lib",
+    "src"
+  ],
+  "harmony": {
+    "alias": "react-native-doc-viewer"
+  },
+  "homepage": "https://github.com/yrjwcharm/react-native-ohos-svgaplayer#readme",
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ],
+    "preset": "react-native"
+  },
+  "keywords": [
+    "fabric",
+    "harmony",
+    "ohos",
+    "react-native",
+    "docviewer",
+    "docx",
+    "pptx",
+    "xml"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "react-native-ohos-docviewer",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yrjwcharm/react-native-ohos-docviewer.git"
+  },
+  "scripts": {
+  },
+  "types": "./lib/index.d.ts",
+  "version": "0.0.3",
+  "workspaces": [
+    "example"
+  ]
+}
