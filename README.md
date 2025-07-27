@@ -31,7 +31,7 @@ yarn add react-native-ohos-docviewer
 
 下面的代码展示了这个库的基本使用场景：基于
 
-> [!WARNING] 使用时 import 导入的库名不变。因为该库具有 alias 别名: react-native-ohos-docviewer [主要是统一 android/ios import 导入]
+> [!WARNING] 使用时 import 导入的库名不变。因为该库具有 alias 别名: react-native-doc-viewer [主要是统一 android/ios import 导入]
 
 ```js
 import React, { useEffect } from "react";
