@@ -47,13 +47,13 @@ import { getBase64ImagePath } from "./imgbase64";
 const App = () => {
   useEffect(() => {
     //监听文件预览下载进度
-    DeviceEventEmitter.addListener("RNDownloaderProgress", (event) => {
+    const subscribtion=DeviceEventEmitter.addListener("RNDownloaderProgress", (event) => {
       // 添加事件处理
       console.log("Download progress:", event.progress);
     });
     return () => {
       // 清理事件监听器
-      DeviceEventEmitter.removeAllListeners("RNDownloaderProgress");
+     subscribtion&& subscribtion.remove();
     };
   }, []);
   const previewImage = () => {
