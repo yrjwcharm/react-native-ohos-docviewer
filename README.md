@@ -239,6 +239,11 @@ target_link_libraries(rnoh_app PUBLIC rnoh_sample_package)
 + target_link_libraries(rnoh_app PUBLIC rnoh_docviewer)
 
 # RNOH_END: manual_package_linking_2
+
+
+ #三方包得加上folly编译配置
++ target_compile_options(rnoh_docviewer PUBLIC ${folly_compile_options})
+
 ```
 
 打开 `entry/src/main/cpp/PackageProvider.cpp`，添加：
